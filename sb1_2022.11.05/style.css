@@ -1,0 +1,103 @@
+
+  
+  .item {
+    font-size: 30px;
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: cornflowerblue;
+    border: 1px solid white;
+  }
+  .block {
+    display: grid;
+    /* grid-template-columns: repeat(3, 200px); */
+    grid-template-columns: repeat(4, 1fr); /* repeat(3, auto) */
+    grid-template-rows: 100px repeat(3, auto) 100px;
+  }
+  .item1 {
+    background-color: crimson;
+    /* grid-column-start: 1;
+    grid-column-end: 5; */ /* - на какой линии закончится тег*/
+    grid-column: 1 / 5;
+  }
+  .item3 {
+    background-color: springgreen;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: span 5; /* сколько строк / столбцов займет собой тег */
+  }
+  .item5 {
+    background-color: rebeccapurple;
+    grid-row-end: span 2;
+  }
+  .item17 {
+    background-color: #222;
+    grid-column-end: span 4;
+  }
+
+h2 {
+  color: crimson;
+}
+.white {
+  color: #fff;
+}
+
+/* q 1.10 */
+.page{
+  height: 700px;
+}
+
+#pullover{
+  background-image: url('https://img4.cliparto.com/pic/xl/247008/4945121-knit-woolen-seamless-ethnic-ornament-texture-fabri.jpg');
+  background-size: auto 100%;
+}
+#bike{
+  background-position: left bottom;
+  background-size: 100px;
+  background-image: url('https://www.publicdomainpictures.net/pictures/290000/nahled/penny-farthing-bicycle.png');
+  background-color: darkgreen;
+  background-repeat: no-repeat;
+}
+
+#photo{
+   background-image: url('https://d.newsweek.com/en/full/1829968/rick-morty-peace-season-5.webp');
+   background-position: center;
+   /* contain - вписать в размеры тега / cover - заполнить собой весь тег */
+   background-size: cover;
+}
+/*
+  q 4.5
+*/
+.map {
+  display: flex;
+}
+.map_1 {
+  align-items: center;
+  justify-content: space-between;
+}
+.map_2 {
+  justify-content: space-between;
+}
+.map_3 {
+  flex-direction: column;
+  align-items: center;
+}
+/* q 4.6 */
+.map {
+	display: flex;
+	justify-content: center;
+}
+.mario_1 {
+	align-self: flex-start;
+}
+.mario_2 {
+	align-self: center;
+}
+.mario_3 {
+	align-self: flex-end;
+}
+
+/* q 4.8 */
+.facts {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+}
