@@ -1,5 +1,7 @@
 
-  
+  body {
+    margin: 0;
+  }
   .item {
     font-size: 30px;
     font-family: sans-serif;
@@ -12,6 +14,7 @@
     /* grid-template-columns: repeat(3, 200px); */
     grid-template-columns: repeat(4, 1fr); /* repeat(3, auto) */
     grid-template-rows: 100px repeat(3, auto) 100px;
+    height: 100vh;
   }
   .item1 {
     background-color: crimson;
